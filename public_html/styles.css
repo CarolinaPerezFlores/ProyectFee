@@ -1053,7 +1053,6 @@ footer {
   .navbarMain {
     display: block;
     height: 20vw;
-    position: fixed;
   }
 }
 
