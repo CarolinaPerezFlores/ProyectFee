@@ -1,0 +1,79 @@
+.input-one{
+    display: block;
+    margin: auto;
+    margin-top: 14%;
+    background-color: #F9F4F5;
+    max-width: 200%;
+    width: 80%;
+    font-family: 'Spartan', sans-serif;
+    @include respont-to ($media-moble-horizontal){
+        width: 50%;
+        margin-top: 5%;
+        }
+}
+.tex-area {
+    display: block;
+    margin: auto;
+    margin-top: 8%;
+    max-width: 100%;
+    width: 80%;
+    height: 55%;
+    background-color: #F9F4F5;
+    font-family: 'Spartan', sans-serif;
+    @include respont-to ($media-moble-horizontal){
+        height: 77%;
+        }
+}
+
+.input_search_company {
+    display: flex;
+    width: 25vw;
+    height: 2vw;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-bottom-left-radius: 0.5vw;
+    border-top-left-radius: 0.5vw;
+    @include respont-to ($media-moble-horizontal){
+        width: 61vw;
+        height: 9vw;
+        font-size: 5vw;
+        border-bottom-left-radius: 6px;
+        border-top-left-radius: 6px;
+      }
+}
+
+.text-area-rgb {
+    display: block;
+    margin: auto;
+    margin-top: 5vw;
+    width: 26vw;
+    height: 15vw;
+    background-color: rgba(255, 255, 255, 0.651);
+    border-radius: 5px;
+    @include respont-to ($media-moble-horizontal){
+        width: 83vw;
+        height: 24vw;
+        z-index: 6;
+        background-color: #FFFFFF;
+        
+      }
+}
+
+.text-area-rgb:active{
+    @include respont-to ($media-moble-horizontal){
+        width: 83vw;
+        height: 24vw;
+        z-index: 6;
+    }
+}
+
+.text-area-rgb-two {
+    display: block;
+    margin: auto;
+    margin-top: 2vw;
+    width: 21vw;
+    height: 13vw;
+    background-color: rgba(255, 255, 255, 0.651);
+    border-radius: 5px;
+    }

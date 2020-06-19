@@ -1,0 +1,27 @@
+
+{% extends "layout.twig" %}
+{% block content %}
+
+<form  action='/feebulari/public_html/users/search' method="post"  enctype="multipart/form-data" >
+<div class="search_container" >
+  <input class="input_search_company" type="text" placeholder="Buscar" name="companyInput">
+  <button type="submit"  href="/feebulari/public_html/add" class="button_search_company"><img class="img_research" src="../img/research.svg" alt=""></button>
+</div>
+</form>
+
+
+<div>
+ {# <h1>Search</h1> #}
+ <h1>{{ responseMessageee }}</h1>
+  <ul>
+    {% for sear in filtere %}
+        <li>
+        <h5>{{ sear.company }}</h5>
+        <h5>{{ sear.comment }}</h5>
+        {# <h5>{{ sear}}</h5> #}
+        </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock %}

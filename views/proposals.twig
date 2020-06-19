@@ -1,0 +1,15 @@
+{% extends "layout.twig" %}
+{% block content %}
+  <h1>{{ name }}</h1>
+  <ul>
+    {% for proposal in proposals %}
+        <li>
+        <h5>{{ proposal.company }}</h5>
+        <h5>{{ proposal.comment }}</h5>
+        </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
+
+  
+

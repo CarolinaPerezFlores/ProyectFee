@@ -1,0 +1,54 @@
+/***************************************$COLORS */
+
+/*************************************** Colores de la marca */
+
+$color-brand: #6113b5;
+$color-secundary: white;
+$color-tres: grey;
+
+$color-black: rgb(0, 0, 0);
+$color-darkgrey: #4d4d4d;
+$color-grey: #737373;
+$color-lightgrey: #bfbfbf;
+$color-lighter-grey: #e7e7e7;
+$color-white: rgb(255, 255, 255);
+
+/********************************************** colores de texturas o de alertas */
+
+$color-alert: rgb(236, 47, 47);
+$color-error: rgb(255, 72, 0);
+$color-info: yellow; 
+$color-success: rgb(10, 165, 10);
+
+
+/********************************************** Tipografía */
+
+$basefont: 'Spartan';
+$basefonsize: 16px;
+
+
+/********************************************** Color de los botones*/
+
+$button-words-color: $color-black;
+$button-backgroun-color: $color-white;
+$button-font-size: 13px;
+$button-line-width: 5px;
+$button-line-color: #FFFF09;
+
+
+/********************************************** Constantes*/
+
+$border-radius: 4px;
+$padding: 24px;
+$page-max-width: 100vw;
+
+
+
+
+/********************************************* Predefined Break-points */
+$media-websiste: 1260px;
+$media-tablet-horizontal: 1024px;
+$media-tablet-vertical-Pro: 960px;
+$media-tablet-vertical: 768px;
+$media-moble-horizontal: 480px;
+$media-moble-vertical: 320px;

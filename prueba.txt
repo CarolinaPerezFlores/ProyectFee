@@ -1,0 +1,121 @@
+<button id="menu">menu</button>
+<div id="superior">
+	<div id="uul">
+		<div><a id="aa" href="#">Lorem</a></div>
+		<div><a id="aa" href="#">Lorem</a></div>
+		<div><a id="aa" href="#">Consectetur.</a></div>
+		<div><a id="aa" href="#">Elit</a></div>
+		<div><a id="aa" href="#">Elit.</a></div>
+	</div>
+</div>
+
+<button id="menu">menu</button>
+<nav id="superior">
+	<ul>
+		<li><a href="#">Lorem</a></li>
+		<li><a href="#">Lorem</a></li>
+		<li><a href="#">Consectetur.</a></li>
+		<li><a href="#">Elit</a></li>
+		<li><a href="#">Elit.</a></li>
+	</ul>
+</nav>
+
+button#menu {
+	/* Ocultamos el boton en escritorio */
+    display: none;
+}
+
+button#menu:focus + div#superior {
+	/* Si es pulsado el boton, mostramos el nav.
+	Esto lo puedo hacer porque adquiere el foco.
+	Solo funcionará, si el botón y el menú esta a la misma altura. */
+    display: block;
+}
+
+div#superior div#uul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div#superior div#uul a#aa {
+    display: block;
+    width: 8em;
+    text-decoration: none;
+    border: 1px solid #BE353D;
+    padding: .3em 0;
+    text-align: center;
+    color: #FA453B;
+    background: #EF8E76;
+    transition: 1s all;
+}
+
+div#superior div#uul a#aa:hover {
+    background: #ec7b5f;
+}
+
+@media all and (max-width: 700px) {
+	/* En smartphone mostramos el botón */
+    button#menu {
+        display: block;
+    }
+	div#superior {
+        display: none;
+    }
+	div#superior div#uul {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+button#menu {
+	/* Ocultamos el boton en escritorio */
+    display: none;
+}
+
+button#menu:focus + nav#superior {
+	/* Si es pulsado el boton, mostramos el nav.
+	Esto lo puedo hacer porque adquiere el foco.
+	Solo funcionará, si el botón y el menú esta a la misma altura. */
+    display: block;
+}
+
+nav#superior ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav#superior ul a {
+    display: block;
+    width: 8em;
+    text-decoration: none;
+    border: 1px solid #BE353D;
+    padding: .3em 0;
+    text-align: center;
+    color: #FA453B;
+    background: #EF8E76;
+    transition: 1s all;
+}
+
+nav#superior ul a:hover {
+    background: #ec7b5f;
+}
+
+@media all and (max-width: 700px) {
+	/* En smartphone mostramos el botón */
+    button#menu {
+        display: block;
+    }
+	nav#superior {
+        display: none;
+    }
+	nav#superior ul {
+        flex-direction: column;
+    }
+}

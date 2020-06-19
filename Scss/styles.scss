@@ -1,0 +1,27 @@
+
+// Librerías y variables
+@import "lib/variables";
+@import "lib/mixins";
+
+// Tablas
+
+
+
+// Elementos base, contienen los elementos HTML 
+@import "base/buttons";
+@import "base/links";
+@import "base/typography";
+@import "base/images";
+@import "base/inputs";
+
+
+//Layouts cosas como header footer sections
+@import "layout/layout";
+
+
+// Componentes
+@import "components/grids";
+    //Utilities simpre va al último
+@import "components/utilities";
+
+

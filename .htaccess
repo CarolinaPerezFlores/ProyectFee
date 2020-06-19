@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{THE_REQUEST} / [NC]
+RewriteRule ^ %1 [L,NE,R=302]
+RewriteRule ^((?!/).)$ / [L,NC]

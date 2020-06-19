@@ -1,0 +1,294 @@
+p {
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.5vw;
+    margin: 0% 15% 0% 15%;
+    @include respont-to ($media-tablet-horizontal){
+        margin-top: 5%;
+      }
+      @include respont-to ($media-tablet-vertical-Pro){
+        margin-top: 3%
+      }
+      @include respont-to ($media-moble-horizontal){
+        font-size: 4vw;
+        margin: 5% 5% 0% 5%;
+        text-align: justify;
+    }  
+    
+}
+
+.slogan {
+    display: flex;
+    position: relative;
+    margin-top: 2vw;
+    margin: auto;
+    width: max-content;
+    justify-content: center;
+    
+    @include respont-to ($media-tablet-horizontal){
+        font-size: 1.9vw;
+      }
+      @include respont-to ($media-moble-horizontal){
+        font-size: 4vw;
+        margin-top: 4vw;
+     }
+}
+
+
+
+.numbers{
+    font-family: 'Spartan', sans-serif;
+    font-size: 2.4vw;
+    // color: $color-secundary;
+    color: $color-secundary;
+    justify-content: center;
+    margin: 5% 5% 5% 5%; 
+    text-align: center;
+    position: relative;
+    top: 10%;
+    @include respont-to ($media-moble-horizontal){
+        font-size: 5.2vw;
+          
+        }
+}
+
+.font-box{
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.2vw;
+    text-align: center;
+    margin: 11% 1% 0% 1%;
+    @include respont-to ($media-moble-horizontal){
+        font-size: 4vw;
+        margin-top: 5%;
+        }
+
+}
+
+.btn-send-done-text {
+ 
+    font-size: 1vw;
+    margin: 0% 0% 0% 0%;
+    @include respont-to ($media-moble-horizontal){
+        font-size: 2.5vw;
+      }
+    
+}
+
+p3 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.1vw;
+    color: $color-white;
+    display: block;
+    position: relative;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    @include respont-to ($media-moble-horizontal){
+      font-size: 4vw;
+      margin: auto;
+      display: flex;
+    }  
+    
+}
+
+.prueba{
+    color:red;
+}
+
+.typo_navbar {
+    font-family: 'Spartan', sans-serif;
+    display: flexbox;
+    font-size: 1.7vw;
+    text-align: center;
+    margin: 1% 1% 1% 1%;
+    width: 21vw;
+    display: -ms-inline-flexbox;
+    @include respont-to ($media-tablet-horizontal){
+        font-size: 2.1vw;
+        width: 90vw;
+      }
+
+      @include respont-to ($media-moble-horizontal){
+        font-size: 4vw;
+        color: $color-secundary;
+        position: relative;
+        margin-left: 5vw;
+        text-align: start;
+        // width: 100%;
+        // left: -38vw;
+      }
+}
+
+.typografy_card_title{
+    display: block;
+    position: relative;
+    font-size: 1.2vw;
+    text-align: justify;
+    // top: 0.5vw;
+    margin: 0vw 0vw 1vw 0vw;
+    font-weight: 500;
+    color: $color-brand;
+    // font-weight: 2px;
+    // font-family: 'Spartan', sans-serif;
+    // font-style: medium;
+    @include respont-to ($media-moble-horizontal){
+        font-size: 5.4vw;
+      }
+    
+}
+
+
+.typografy_card {
+    font-size: 1.2vw;
+    margin: 4% 3.2% 2% 3.2%;
+    text-align: start;
+    @include respont-to ($media-moble-horizontal){
+        font-size: 3.5vw;
+      }
+    
+}
+
+.number_card{
+    display: inline-flex;
+    font-size: 1.3vw;
+    margin: 0% 0% 0% 1%;
+    width: 1vw;
+    margin-right: 0px;
+    // font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    // top: -8px;
+    top: -8px;
+    @include respont-to ($media-tablet-vertical-Pro){
+      top: -1.1vw;
+    }
+    @include respont-to ($media-moble-horizontal){
+        font-size: 3.5vw;
+      }
+      @include respont-to ($media-moble-horizontal){
+        // left: -17vw;
+        font-size: 8.5vw;
+        left: -11.5vw;
+        width: 17.5vw;
+        justify-content: center;
+        margin-left: 0px;;
+      }
+}
+
+.title_proposal {
+  display: block;
+  position: relative;
+  width: 56vw;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  margin-top: 9vw;
+  
+  @include respont-to ($media-tablet-horizontal){
+      font-size: 1.9vw;
+      // top: 74vw;
+    }
+    @include respont-to ($media-moble-horizontal){
+      font-size: 5vw;
+      // top: 176vw;
+      width: auto;    
+   }
+}
+
+
+.section_proposals {
+  display: block;
+  position: relative;
+  width: 56vw;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  margin-top: 15vw;
+
+  @include respont-to ($media-moble-horizontal){
+    // top: 1327vw;
+    width: 80vw;
+    font-size: 6vw;
+  }
+}
+
+
+.word {
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.3vw;
+  @include respont-to ($media-tablet-vertical){
+    font-size: 1.8vw;
+  }
+  @include respont-to ($media-moble-horizontal){
+    font-size:5vw;
+    width: 7vw;
+    margin-left: 7vw;
+    margin-top: 3vw;
+  }
+}
+
+.modalTypoTitle{
+  font-size: 1.6vw;
+  text-align: center;
+  margin: auto;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+  // margin-left: 0px;
+  @include respont-to ($media-tablet-vertical-Pro){
+    font-size: 2vw;
+    margin-top: 2vw;
+  }
+  @include respont-to ($media-moble-horizontal){
+    font-size: 3vw;
+  }
+  @include respont-to ($media-moble-vertical){
+    font-size: 4vw;
+  }
+}
+
+.modalTypoContent{
+  font-size: 1.1vw;
+  text-align: center;
+  margin: auto;
+  @include respont-to ($media-tablet-vertical-Pro){
+    font-size: 1.5vw;
+  }
+  @include respont-to ($media-moble-horizontal){
+    font-size: 2.4vw;
+  }
+  @include respont-to ($media-moble-vertical){
+    font-size: 3.5vw;
+    margin-top: 3.5vw;
+  }
+}
+
+.text_form_idea {
+  display: flex;
+    margin-top: 0vw;
+    position: relative;
+    height: 3vw;
+    justify-content: center;
+    align-items: flex-end;
+    @include respont-to ($media-moble-horizontal){
+      display: flex;
+      margin: 5vw;
+      /* margin-top: 0vw; */
+      position: relative;
+      width: auto;
+      height: 10vw;
+      justify-content: center;
+      align-items: flex-end;
+      font-size: 5vw;
+    }
+}
+
+.text-env {
+  font-size: 1.5vw;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 600;     
+  @include respont-to ($media-moble-horizontal){
+    font-size: 4.5vw;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+}

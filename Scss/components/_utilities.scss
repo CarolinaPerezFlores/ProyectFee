@@ -1,0 +1,20 @@
+
+.button_menu:focus + .nav_menu {
+	/* Si es pulsado el boton, mostramos el nav.
+	Esto lo puedo hacer porque adquiere el foco.
+  Solo funcionará, si el botón y el menú esta a la misma altura. */
+  display: none;
+    @include respont-to ($media-moble-horizontal){
+      display: block;
+      }
+    
+}
+
+
+.btn-send-done:focus + .modalExterior{
+  display: block;
+}
+
+.modalExterior:active {
+  display: block;
+}

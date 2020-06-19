@@ -1,0 +1,23 @@
+@mixin max-width ($maxwhidth: $page-max-width){
+    max-width: $maxwhidth;
+    width: $maxwhidth;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-right: 0px;
+    
+}
+
+// @mixin logo-size {
+//     // width: 30%;
+//     // height: 50%;
+//     max-width: 20%;
+    
+    
+// }
+
+@mixin respont-to($width){
+    @media only screen and (max-width:$width){
+        @content;
+        //para usareste bloque tengo que escribir en el código @include respont-to (){}
+    }
+}
