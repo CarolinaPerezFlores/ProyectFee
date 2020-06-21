@@ -63,15 +63,15 @@ $map = $routerContainer->getMap();
 //     'controller' => 'App\Controllers\IndexController', 
 //     'action' => 'IndexAction']);
 $map->get('index', '/', [
-    'controller' => 'App\Controllers\ProposalsController', 
-    'action' => 'getAddProposalAction']); 
+    'controller' => 'App\Controllers\IdeasController', 
+    'action' => 'getAddIdeaAction']); 
 // $map->post('saveProposals', '/feebulari/public/add', [
 //     'controller' => 'App\Controllers\ProposalsController', 
 //     'action' => 'getAddProposalAction']); 
 
 
-$map->post('saveProposals', '/', [
-        'controller' => 'App\Controllers\ProposalsController', 
+$map->post('saveIdeas', '/', [
+        'controller' => 'App\Controllers\IdeasController', 
         'action' => 'postSearch'
         ]); 
 

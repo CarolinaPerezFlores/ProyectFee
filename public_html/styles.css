@@ -386,10 +386,13 @@ p3 {
   font-size: 1.2vw;
   margin: 4% 3.2% 2% 3.2%;
   text-align: start;
+  word-break: break-word;
+  max-width: 28vw;
 }
 @media only screen and (max-width: 480px) {
   .typografy_card {
     font-size: 3.5vw;
+    max-width: none;
   }
 }
 
@@ -791,6 +794,9 @@ p3 {
   margin-top: 5vw;
   width: 26vw;
   height: 15vw;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.2vw;
+  padding: 0.5vw;
   background-color: rgba(255, 255, 255, 0.651);
   border-radius: 5px;
 }
@@ -803,12 +809,8 @@ p3 {
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .text-area-rgb:active {
-    width: 83vw;
-    height: 24vw;
-    z-index: 6;
-  }
+.text-area-rgb:focus {
+  background-color: rgba(255, 255, 255, 0.84);
 }
 
 .text-area-rgb-two {
@@ -1181,8 +1183,8 @@ footer {
 
 .card_proposal {
   display: inline-table;
-  max-width: 26vw;
-  width: 26vw;
+  max-width: 28vw;
+  width: 28vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1216,7 +1218,7 @@ footer {
 
 .line_card_down {
   max-width: 100vw;
-  width: 24.5vw;
+  width: 26.4vw;
   height: 2vw;
   border-top: 1.2px solid #bfbfbf;
   margin: auto;

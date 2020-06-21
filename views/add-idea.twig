@@ -1,0 +1,118 @@
+
+{% extends "layout.twig" %}
+{% block content %}
+<div class="header_cover">
+{# <img class="img_cover_header" src="/img/wilhelm.jpg" type="submit"  alt="img"></img> #}
+ <a  href="/"><img class="logo_main" type="button"  src="/img/Logo2.png" alt="logo"></img></a>
+
+ <p class="slogan">Donde las ideas conectan con los creadores.</p>
+ {# <div role="alert">
+ <p class="slogan"> {{responseMessage}} </p>
+ </div> #}
+
+ {# <form class="form_one"> #}
+ <form class="form_transparent" action='#ideas' method="post" enctype="multipart/form-data">
+ <p class="text_form_idea">Ingresa una idea</p>
+ <textarea class="text-area-rgb" type="text" autocomplete="off" name="textIdea"></textarea>
+ <button  class="btn_env" type="submit"   href="#ideas" ><p class="text-env">Envía</p></button>
+ </form>
+
+ </img>
+ </div>
+
+{# <div class="contain_form">
+<img class="img_left" src="/img/foco.jpg"></img>
+<div>
+</div>
+<form class="form_two">
+ <p class="text_form_idea">Ingresa una idea</p>
+ <textarea class="text-area-rgb-two"></textarea>
+ <button  class="btn-send-done" ><p class="btn-send-done-text">Envía tu idea</p></button>
+ </form>
+</div> #}
+
+
+
+   <div  class="navbarMain">
+    <div class="container_logo">
+        <a class="container_logo" href="/"><img class="logo_size_navbar" src="/img/Logo2.png" type="submit"  alt="Logo"></img></a>
+    </div>
+    <button class="button_menu">
+     <img type="button" class="img_menu" src="/img/menu.svg" alt="menú"></img> 
+    </button> 
+    <div class="nav_menu">
+        <a href="#ideas">
+          <div class="container_items" type="url" href="#empresas">
+            <p class="typo_navbar">Ideas</p>
+          </div>
+        </a>
+        <a href="#categorías">
+          <div class="container_items">
+              <p class="typo_navbar">Categorías</p></a>
+          </div>
+        </a>
+        <a href="#compartir-idea">
+          <div class="container_items_large">
+              <p class="typo_navbar">Compartir una idea</p></a>
+          </div>
+        </a>
+     </div>   
+  </div>  
+
+
+
+<p id="ideas" class="title_proposal">{{ ideasTitle }}</p>
+<div class="all_proposals"> 
+ 
+    {% for idea in ideas %}
+  <div class="card_proposal">
+      {# <div class="line_card"> 
+          <p class="typografy_card_title">{{ proposal.company }}</p>
+      </div> #}
+      <p class="typografy_card">{{ idea.idea }}</p>
+      <div class="line_card_down"> 
+          <form action="#{{ idea.id }}" method="post"  enctype="multipart/form-data"  onsubmit="return true">
+           <button class="minus_botton"  name="minus"  value={{ idea.id }}>
+           <img class="image_points" src="../img/minus.png" href="#ideas" alt="minus">
+           </img>
+           </button> 
+           <button class="minus_botton"  name="more"  value={{ idea.id }} ><img class="image_points" src="/img/more.png" alt="minus"></img></button> 
+          <p class="number_card">{{ idea.points }}</p>
+          </form>
+      </div>
+  </div>
+  <div id={{ idea.id }}> </div>
+  {# <form method="post"  enctype="multipart/form-data">
+  <input value={{ idea.id }} name="person" ></input>
+  <button  ></button>
+  </form> #}
+  {% endfor %}   
+  {# <button class="cargar_mas">Cargar más comentarios</button> #}
+</div>
+
+
+<p id="categorías" class="section_proposals">Buscar ideas</p>
+{# <p id="propuestas" class="title_proposal">{{ proposalsTitle }}</p> #}
+<form action="#ideas" method="post"  enctype="multipart/form-data" >
+<div class="search_container" >
+  <input class="input_search_company" type="text" placeholder="Buscar" name="ideaInput" autocomplete="off" mozactionhint="send"></input>
+  <button type="submit"  class="button_search_company"><img class="img_research" src="/img/research.svg" alt="lupa"></img></button>
+</div>
+</form>
+
+{# <div>
+ <h1>{{ name }}</h1>
+  <ul>
+    {% for proposal in proposals %}
+        <li>
+        <h5>{{ proposal.company }}</h5>
+        <h5>{{ proposal.comment }}</h5>
+        </li>
+    {% endfor %}
+  </ul>
+</div> #}
+
+
+
+
+{% endblock %}
