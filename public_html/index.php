@@ -75,6 +75,9 @@ $map->post('saveIdeas', '/', [
         'action' => 'postSearch'
         ]); 
 
+        // $map->get('sitemap', '/sitemap', [
+        //     'controller' => 'App\Controllers\SitemapControler', 
+        //     'action' => 'getSitemap']); 
 
 $map->get('addUser', '/feebulari/public_html/users/add', [
         'controller' => 'App\Controllers\UsersController',
