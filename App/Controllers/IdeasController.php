@@ -62,6 +62,11 @@ class IdeasController extends BaseController {
                       
         try{ 
 
+          if(preg_match('/http|www/i',$textIdea)) {
+           echo  '<script name="accion">alert("Carácteres de contacto no permitidos") </script>';
+          }
+          else {
+
           $ideaValidator->assert($postData);  
           $postData = $request->getParsedBody();  
           $idea = new Idea();
@@ -69,7 +74,7 @@ class IdeasController extends BaseController {
           // $proposal->comment = $postData['comment'];
           $idea->save();
           return new RedirectResponse('/#ideas');
-
+          }
 
           
         } catch (\Exception $e) {
