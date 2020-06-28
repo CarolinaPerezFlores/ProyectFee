@@ -47,7 +47,7 @@ display: none;
         height: 19vw;
         top: 0vw;
         right: 5vw;
-        background-color: white;
+        background-color: transparent;
         border: none;
         outline:none;
       }
@@ -185,7 +185,7 @@ display: none;
   display: block;
   margin: auto;
   margin-top: 10%;
-  background-color: $color-secundary;
+  background-color: #FEAE35;
   max-width: 100%;
   width: 26vw;
   height: auto;
@@ -193,7 +193,7 @@ display: none;
   border-radius: 0.5vw;
   // box-shadow: 7px 7px 9px -5px #3a0574;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.945);
+  // background-color: rgba(255, 255, 255, 0.945);
   margin-top: 3vw;
   outline:none;
   @include respont-to ($media-moble-horizontal){
@@ -204,5 +204,44 @@ display: none;
 }
 
 .btn_env:hover {
-background-color: #FEAE35;
+  background:linear-gradient(to bottom, #FEAE35 5%, #f39d1d 100%);
 }
+
+.button_cookie {
+  display:flex;
+  margin: auto;
+  margin-top: 0.3vw;
+  font-size: 0.86vw;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    background-color:#f9f9f9;
+    border-radius:3px;
+    border:1px solid #dcdcdc;
+    cursor:pointer;
+    color:#1b1b1b;
+    font-family:'Spartan', sans-serif;
+    font-weight:bold;
+    padding:3px 11px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+
+    @include respont-to ($media-moble-horizontal){
+        height: 9.3vw;
+        width: 43vw;
+        position: absolute;
+        left: 42vw;
+        top: 9vw;
+        font-size: 3.86vw;
+        justify-content: center;
+        align-content: center;
+        padding: 2vw;
+  }
+  }
+  .button_cookie:hover {
+    background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    background-color:#e9e9e9;
+  }
+  .button_cookie:active {
+    position:relative;
+    top:1px;
+  }

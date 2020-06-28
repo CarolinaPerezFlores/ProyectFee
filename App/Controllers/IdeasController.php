@@ -19,9 +19,12 @@ class IdeasController extends BaseController {
 
       $cookie_name = "userIdFeebulari";
       $cookie_value = uniqid();
+      $cookie_found = true;
      
       if(!isset($_COOKIE[$cookie_name])) {
         setcookie($cookie_name, $cookie_value,time() + 60*60*24*30, "/");
+        $cookie_found = false;
+        // echo '<div class="mydiv">' .prueba(). '</div>';
       } 
 
 
@@ -29,12 +32,20 @@ class IdeasController extends BaseController {
           
           'ideas' => $ideas,
           'responseMessage'=>$responseMessage,
-          'ideasTitle' => $ideasTitle
+          'ideasTitle' => $ideasTitle,
+          'cookie_found' => $cookie_found
          ]);
 
         
         // location.reload();
     }
+
+
+
+
+
+
+
 
 
 
@@ -134,8 +145,8 @@ class IdeasController extends BaseController {
                   $cookie_name = "userIdFeebulari";
                   $cookie_value = uniqid();
                   setcookie($cookie_name, $cookie_value,time() + 60*60*24*30, "/");
+                }
                  
-                } 
 //  Entonces sigue el código utilizando la cookie para hacer una consulta.
                 else {
                             
@@ -230,6 +241,12 @@ class IdeasController extends BaseController {
               
               
             }
+
+
+
+
+
+
 
 
 

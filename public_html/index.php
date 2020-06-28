@@ -69,6 +69,10 @@ $map->get('index', '/', [
 //     'controller' => 'App\Controllers\ProposalsController', 
 //     'action' => 'getAddProposalAction']); 
 
+$map->get('cookiesGet', '/cookies', [
+    'controller' => 'App\Controllers\CookieController', 
+    'action' => 'cookieInfo']);
+
 
 $map->post('saveIdeas', '/', [
         'controller' => 'App\Controllers\IdeasController', 

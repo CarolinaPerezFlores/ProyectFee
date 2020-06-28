@@ -18,3 +18,9 @@
 .modalExterior:active {
   display: block;
 }
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

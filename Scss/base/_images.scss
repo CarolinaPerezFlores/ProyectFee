@@ -133,6 +133,18 @@ display: none;
 
 }
 
+.img_cookie {
+  width: 5vw;
+    position: fixed;
+    bottom: 1.5vw;
+    right: 2.5vw;
+    opacity: 0.95;
+    @include respont-to ($media-moble-horizontal){
+      width: 11vw;
+      top: 37em
+    }
+}
+
   
 
 

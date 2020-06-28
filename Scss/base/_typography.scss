@@ -74,15 +74,17 @@ p {
 }
 
 p3 {
+    height: fit-content;
+    width: fit-content;
     font-family: 'Spartan', sans-serif;
     font-size: 1.1vw;
     color: $color-white;
     display: block;
     position: relative;
-    margin-top: 3vw;
-    margin-left: 3vw;
+    // margin-top: 3vw;
+    // margin-left: 3vw;
     @include respont-to ($media-moble-horizontal){
-      font-size: 4vw;
+      font-size: 3vw;
       margin: auto;
       display: flex;
     }  
@@ -143,7 +145,7 @@ p3 {
     word-break: break-word;
     max-width: 28vw;
     @include respont-to ($media-moble-horizontal){
-        font-size: 3.5vw;
+        font-size: 3.8vw;
         max-width: none;
       }
     
@@ -294,4 +296,52 @@ p3 {
     display: flex;
   }
 
+}
+
+.text_cookie_alert {
+  font-size: 0.85vw;
+  margin: auto;
+
+  @include respont-to ($media-tablet-vertical){
+    font-size: 1vw;
+  }
+  @include respont-to ($media-moble-horizontal){
+    font-size: 3vw;
+  }
+}
+
+.text_bold{
+  font-weight: 700;
+}
+
+
+.text_cookie {
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.2vw;
+  margin: none;
+  margin-top: 2vw;
+  @include respont-to ($media-moble-horizontal){
+    font-size: 3.3vw;
+    margin-top: 3vw;
+  }
+  // margin: 0% 0% 0% 0%;
+}
+
+.title_cookie {
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.5vw;
+  margin: none;
+  margin-top: 7vw;
+  @include respont-to ($media-moble-horizontal){
+    font-size: 3.5vw;
+  }
+}
+
+.link_cookie{
+  font-weight: 600;
+  color: rgb(126, 9, 126);
+}
+
+.cookie_footer {
+  color: #ffffff;
 }
