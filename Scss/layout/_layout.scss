@@ -299,7 +299,7 @@ body{
   position: sticky;
   top: 0px;
   z-index: 1;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.951) 27%, rgba(97,19,181,1) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 27%, rgba(97,19,181,1) 100%);
   // background: linear-gradient(90deg, rgba(255, 255, 255, 0.541) 27%, rgba(97,19,181,1) 100%);
   z-index: 3;
   @include respont-to ($media-moble-horizontal){

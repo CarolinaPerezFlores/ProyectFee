@@ -1190,7 +1190,7 @@ footer {
   position: sticky;
   top: 0px;
   z-index: 1;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.951) 27%, #6113b5 100%);
+  background: linear-gradient(90deg, white 27%, #6113b5 100%);
   z-index: 3;
 }
 @media only screen and (max-width: 480px) {

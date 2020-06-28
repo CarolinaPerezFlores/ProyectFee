@@ -73,7 +73,7 @@ class IdeasController extends BaseController {
                       
         try{ 
 
-          if(preg_match('/http|www/i',$textIdea)) {
+          if(preg_match('/http|www|@/i',$textIdea)) {
            echo  '<script name="accion">alert("Carácteres de contacto no permitidos") </script>';
           }
           else {
