@@ -332,8 +332,10 @@ p3 {
   font-size: 1.5vw;
   margin: none;
   margin-top: 7vw;
+  margin-left: 11vw;
   @include respont-to ($media-moble-horizontal){
     font-size: 3.5vw;
+    margin-left: 0vw;
   }
 }
 

@@ -645,10 +645,12 @@ p3 {
   font-size: 1.5vw;
   margin: none;
   margin-top: 7vw;
+  margin-left: 11vw;
 }
 @media only screen and (max-width: 480px) {
   .title_cookie {
     font-size: 3.5vw;
+    margin-left: 0vw;
   }
 }
 
