@@ -693,7 +693,7 @@ p3 {
 }
 
 .logo_main {
-  width: 14vw;
+  width: 15vw;
   height: 4vw;
   margin: 3vw;
   margin-left: 7vw;
@@ -702,8 +702,8 @@ p3 {
 }
 @media only screen and (max-width: 480px) {
   .logo_main {
-    width: 37vw;
-    height: 11vw;
+    width: 44vw;
+    height: 12vw;
     margin-bottom: 2vw;
     margin-top: 5vw;
     margin-left: 4vw;
@@ -724,7 +724,7 @@ p3 {
 }
 
 .logo_size_navbar {
-  max-width: 19vw;
+  max-width: 20vw;
   width: 13vw;
   margin: 0% 0% 0% 0%;
   cursor: pointer;
@@ -1251,13 +1251,13 @@ footer {
   width: 15vw;
   height: 3vw;
   background-color: white;
-  border-left: 1.2px solid grey;
+  border-left: 2.1px solid grey;
   background-color: transparent;
   cursor: pointer;
 }
 @media only screen and (max-width: 1024px) {
   .container_items {
-    height: 5vw;
+    height: 3vw;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1285,14 +1285,14 @@ footer {
   width: 23vw;
   height: 3vw;
   background-color: white;
-  border-left: 1.2px solid grey;
+  border-left: 2.1px solid grey;
   background-color: transparent;
   cursor: pointer;
   cursor: pointer;
 }
 @media only screen and (max-width: 1024px) {
   .container_items_large {
-    height: 5vw;
+    height: 3vw;
     width: 26vw;
   }
 }

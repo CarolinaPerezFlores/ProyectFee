@@ -365,11 +365,11 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0.8
   width: 15vw;
   height: 3vw;
   background-color: $color-secundary;
-  border-left: 1.2px solid $color-tres;
+  border-left: 2.1px solid $color-tres;
   background-color: transparent;
   cursor: pointer;
   @include respont-to ($media-tablet-horizontal){
-  height: 5vw;
+  height: 3vw;
   }
   @include respont-to ($media-moble-horizontal){
   
@@ -397,13 +397,13 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0.8
   width: 23vw;
   height: 3vw;
   background-color: $color-secundary;
-  border-left: 1.2px solid $color-tres;
+  border-left: 2.1px solid $color-tres;
   background-color: transparent;
   cursor: pointer;
 
   cursor: pointer;
   @include respont-to ($media-tablet-horizontal){
-  height: 5vw;
+  height: 3vw;
   width: 26vw;
  
   }

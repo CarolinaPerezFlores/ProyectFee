@@ -23,15 +23,15 @@
 
 
 .logo_main {
-  width: 14vw;
+  width: 15vw;
   height: 4vw;
   margin: 3vw;
   margin-left: 7vw;
   margin-bottom: 0vw;
   margin-top: 1vw;
   @include respont-to ($media-moble-horizontal){
-    width: 37vw;
-    height: 11vw;
+    width: 44vw;
+    height: 12vw;
     margin-bottom: 2vw;
     margin-top: 5vw;
     margin-left: 4vw;
@@ -52,7 +52,7 @@
 
 .logo_size_navbar {
   // max-width: 20%;
-  max-width: 19vw;
+  max-width: 20vw;
   width: 13vw;
   margin: 0% 0% 0% 0%;
   cursor: pointer;
