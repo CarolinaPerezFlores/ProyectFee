@@ -667,6 +667,13 @@ p3 {
   color: #ffffff;
 }
 
+.font-input {
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .logo_size {
   max-width: 15vw;
   margin: 2% 2% 2% 2%;
@@ -1521,7 +1528,7 @@ footer {
 @media only screen and (max-width: 480px) {
   .form_transparent {
     width: 90vw;
-    height: 59vw;
+    height: 63vw;
     margin-top: 41vh;
     position: relative;
     z-index: 4;
