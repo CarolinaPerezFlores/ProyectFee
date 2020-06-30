@@ -54,6 +54,9 @@
     padding: 0.5vw;
     background-color: rgba(255, 255, 255, 0.651);
     border-radius: 5px;
+    // &:first-letter {
+    //     text-transform: uppercase;
+    //   }
     @include respont-to ($media-moble-horizontal){
         width: 83vw;
         height: 24vw;
@@ -63,9 +66,16 @@
       }
 }
 
+ 
+
+
+// .text-area-rgb font :first-letter{
+//     text-transform: capitalize;
+// }
+
 .text-area-rgb:focus{
-    
         background-color: rgba(255, 255, 255, 0.840);
+        
 }
 
 

@@ -284,6 +284,9 @@ p {
   font-size: 1.5vw;
   margin: 0% 15% 0% 15%;
 }
+p p:first-letter {
+  text-transform: uppercase;
+}
 @media only screen and (max-width: 1024px) {
   p {
     margin-top: 5%;
