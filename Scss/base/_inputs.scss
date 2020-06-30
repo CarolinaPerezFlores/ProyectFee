@@ -47,7 +47,7 @@
     display: block;
     margin: auto;
     margin-top: 5vw;
-    width: 26vw;
+    width: 23vw;
     height: 15vw;
     font-family: 'Spartan', sans-serif;
     font-size: 1.2vw;
@@ -58,10 +58,11 @@
     //     text-transform: uppercase;
     //   }
     @include respont-to ($media-moble-horizontal){
-        width: 83vw;
+        width: 80vw;
         height: 24vw;
         z-index: 6;
         background-color: #FFFFFF;
+        font-size: 4.2vw;
         
       }
 }

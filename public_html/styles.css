@@ -668,7 +668,7 @@ p3 {
 }
 
 .font-input {
-  display: flex;
+  display: block;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -917,7 +917,7 @@ p3 {
   display: block;
   margin: auto;
   margin-top: 5vw;
-  width: 26vw;
+  width: 23vw;
   height: 15vw;
   font-family: "Spartan", sans-serif;
   font-size: 1.2vw;
@@ -927,10 +927,11 @@ p3 {
 }
 @media only screen and (max-width: 480px) {
   .text-area-rgb {
-    width: 83vw;
+    width: 80vw;
     height: 24vw;
     z-index: 6;
     background-color: #FFFFFF;
+    font-size: 4.2vw;
   }
 }
 
