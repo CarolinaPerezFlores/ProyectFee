@@ -2,9 +2,7 @@ p {
     font-family: 'Spartan', sans-serif;
     font-size: 1.5vw;
     margin: 0% 15% 0% 15%;
-    p:first-letter {
-    text-transform: uppercase;
-  }
+   
     @include respont-to ($media-tablet-horizontal){
         margin-top: 5%;
       }
@@ -17,6 +15,10 @@ p {
         text-align: justify;
     }  
     
+}
+
+p:first-letter {
+  text-transform: uppercase;
 }
 
 .slogan {
@@ -35,7 +37,6 @@ p {
         margin-top: 4vw;
      }
 }
-
 
 
 .numbers{
