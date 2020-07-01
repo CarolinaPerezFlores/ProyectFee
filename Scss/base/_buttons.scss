@@ -185,11 +185,11 @@ display: none;
   display: block;
   margin: auto;
   margin-top: 10%;
-  background-color: #FEAE35;
+  background-color: #1fe5bd;
   max-width: 100%;
   width: 26vw;
   height: auto;
-  border: 0.3vw solid #FEAE35;
+  border: 0.3vw solid #1fe5bd;
   border-radius: 0.5vw;
   // box-shadow: 7px 7px 9px -5px #3a0574;
   cursor: pointer;
@@ -199,12 +199,12 @@ display: none;
   @include respont-to ($media-moble-horizontal){
     width: 82vw;
     height: 11vw;
-    background-color: #FEAE35;
+    background-color: #1fe5bd;
   }
 }
 
 .btn_env:hover {
-  background:linear-gradient(to bottom, #FEAE35 5%, #f39d1d 100%);
+  background:linear-gradient(to bottom, #1fe5bd 5%, #00d1a7 100%);
 }
 
 .button_cookie {

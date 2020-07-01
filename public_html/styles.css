@@ -209,11 +209,11 @@
   display: block;
   margin: auto;
   margin-top: 10%;
-  background-color: #FEAE35;
+  background-color: #1fe5bd;
   max-width: 100%;
   width: 26vw;
   height: auto;
-  border: 0.3vw solid #FEAE35;
+  border: 0.3vw solid #1fe5bd;
   border-radius: 0.5vw;
   cursor: pointer;
   margin-top: 3vw;
@@ -223,12 +223,12 @@
   .btn_env {
     width: 82vw;
     height: 11vw;
-    background-color: #FEAE35;
+    background-color: #1fe5bd;
   }
 }
 
 .btn_env:hover {
-  background: linear-gradient(to bottom, #FEAE35 5%, #f39d1d 100%);
+  background: linear-gradient(to bottom, #1fe5bd 5%, #00d1a7 100%);
 }
 
 .button_cookie {
