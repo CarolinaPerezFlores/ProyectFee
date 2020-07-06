@@ -112,7 +112,23 @@
   }
 }
 
+.image_delete {
+    display: inline-flex;
+    width: 1.3vw;
+    margin-top: 0.3vw;
+    float: right;
+    cursor: pointer;
+    @include respont-to ($media-moble-horizontal){
+      
+      width: 6vw;
+      margin-top: 1.5vw;
+      
+    }
+}
 
+.image_delete:active{
+  animation: click 0.5s 1;
+}
 
 
 .img_menu {

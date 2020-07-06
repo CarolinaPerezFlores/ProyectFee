@@ -86,11 +86,20 @@
       <div class="line_card_down"> 
           <form action="#{{ idea.id }}" method="post"  enctype="multipart/form-data"  onsubmit="return true">
            <button class="minus_botton"  name="minus"  value={{ idea.id }}>
-           <img class="image_points" src="../img/minus.png" href="#ideas" alt="minus">
-           </img>
+           <img class="image_points" src="../img/minus.png" href="#ideas" alt="minus"></img>
            </button> 
-           <button class="minus_botton"  name="more"  value={{ idea.id }} ><img class="image_points" src="/img/more.png" alt="minus"></img></button> 
-          <p class="number_card">{{ idea.points }}</p>
+           <button class="minus_botton"  name="more"  value={{ idea.id }} >
+           <img class="image_points" src="/img/more.png" alt="minus"></img>
+           </button> 
+           <p class="number_card">{{ idea.points }}</p>
+           {# Si  #}
+           {% if idea.creatorId == globalCookie %}
+           <button class="delete_button" name="delete" value={{ idea.id }}>
+           <img class="image_delete" src="../img/delete.png" href="" alt="delete"></img>
+           </button>
+           {% endif %}
+           </button>
+          
           </form>
       </div>
   </div>

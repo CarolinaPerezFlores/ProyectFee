@@ -20,6 +20,7 @@ class IdeasController extends BaseController {
       $cookie_name = "userIdFeebulari";
       $cookie_value = uniqid();
       $cookie_found = true;
+      $globalCookie = $_COOKIE[$cookie_name] ?? '';
      
       if(!isset($_COOKIE[$cookie_name])) {
         setcookie($cookie_name, $cookie_value,time() + 60*60*24*30, "/");
@@ -33,7 +34,8 @@ class IdeasController extends BaseController {
           'ideas' => $ideas,
           'responseMessage'=>$responseMessage,
           'ideasTitle' => $ideasTitle,
-          'cookie_found' => $cookie_found
+          'cookie_found' => $cookie_found,
+          'globalCookie' => $globalCookie
          ]);
 
         
@@ -60,7 +62,10 @@ class IdeasController extends BaseController {
       $person = $postData['person'] ?? '';
       $minus = $postData['minus'] ?? '';
       $more = $postData['more'] ?? '';
+      $delete = $postData['delete'] ?? '';
       $cookie_name = "userIdFeebulari";
+      // $globalCookie = $_COOKIE[$cookie_name] ?? '';
+      // $cookie_value = 
     
       
   // Éste if es para request de imout commpany
@@ -82,6 +87,7 @@ class IdeasController extends BaseController {
           $postData = $request->getParsedBody();  
           $idea = new Idea();
           $idea->idea = $postData['textIdea'];
+          $idea->creatorId = $_COOKIE[$cookie_name];
           // $proposal->comment = $postData['comment'];
           $idea->save();
           return new RedirectResponse('/#ideas');
@@ -101,7 +107,7 @@ class IdeasController extends BaseController {
       
 
 
-      // Éste if es para request de input commpanyImput
+      // Éste if es para request de input de busqueda
       if ($ideaInput){
           $ideas =  Idea::where('idea', 'LIKE', "%{$postData['ideaInput']}%")->get();
           $ideaValidator = v::key('ideaInput', v::stringType()->notEmpty());
@@ -113,6 +119,8 @@ class IdeasController extends BaseController {
             $idea = new Idea();
             $idea->idea = $postData['ideaInput'];
             $ideasTitle= 'Resuldatos de ' . '"' . "{$postData['ideaInput']}" . '"';
+            $globalCookie = $_COOKIE[$cookie_name] ?? '';
+            $cookie_found = true;
             // $proposalsTitle= 'resuldatos de ' ;
             // $responseMessage = 'saved';
           } catch (\Exception $e) {
@@ -121,7 +129,9 @@ class IdeasController extends BaseController {
           return $this->renderHTML('add-idea.twig', [
             'ideas' => $ideas,
             'responseMessage' => $responseMessage,
-            'ideasTitle' => $ideasTitle
+            'ideasTitle' => $ideasTitle,
+            'cookie_found' => $cookie_found,
+            'globalCookie' => $globalCookie
    ]); 
           
           
@@ -241,6 +251,66 @@ class IdeasController extends BaseController {
               
               
             }
+
+
+
+
+
+
+
+
+
+
+
+// Éste if es para eliminar los comentarios
+if ($delete) {
+  $ideas = Idea::all();
+  $ideaValidator = v::key('delete', v::stringType()->notEmpty());
+
+  try{
+    $ideaValidator->assert($postData);  
+    $postData = $request->getParsedBody();
+    $ideas = Idea::latest()->get();
+    $cookie_name = "userIdFeebulari";
+
+//  Si no tiene cookie hasla
+      if(!isset($_COOKIE[$cookie_name])) {
+        $cookie_name = "userIdFeebulari";
+        $cookie_value = uniqid();
+        setcookie($cookie_name, $cookie_value,time() + 60*60*24*30, "/");
+       
+      } 
+//  Entonces sigue el código utilizando la cookie para hacer una consulta.
+      else {
+        // si miy cooky es igual a 
+                  
+        $matchCreator = Idea::where('creatorId', $_COOKIE[$cookie_name])
+        ->where('id', $postData['delete'])
+        ->delete();
+
+        // Falta agregar un alert aquí!
+ 
+                  // if(!isset($matchCreator)){
+                           
+                  //           echo  '<script name="accion">alert("match!") </script>';
+                  //         }
+                
+      }
+
+        return new RedirectResponse('/');
+        $enviado= false;
+    } catch (\Exception $e) {
+      $responseMessage = $e->getMessage();
+    }            
+    return $this->renderHTML('add-idea.twig', [
+      'ideas' => $ideas,
+      'responseMessage' => $responseMessage
+]); 
+    
+    
+  }
+
+
 
 
 
